@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        <!-- sh.salimi94@gmail.com -->
+        <!-- insta: @zahra_salimi_frontend -->
+        <!-- phone: 09171550811 -->
+        <!-- www.linkedin.com/in/zahra-salimi-882255218 -->
+        <div class="container signin">
+            <form action="">
+                <h2>sign in to website</h2>
+                <div class="icon">
+                   <a href=""> <i class="bi bi-instagram"></i></a>
+                   <a href=""> <i class="bi bi-whatsapp"></i></a>
+                   <a href=""> <i class="bi bi-linkedin"></i></a>
+                </div>
+                <p>or use your email accunt</p>
+                <input type="text" placeholder="email">
+                <input type="password" placeholder="password">
+                <a href="">forget your password</a>
+                <button>sign in</button>
+            </form>
+            </div>
+        <div class="container signup">
+            <form action="">
+                <h2>create accunt</h2>
+                <div class="icon">
+                    <a href=""> <i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-whatsapp"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i></a>
+                </div>
+                <p>or use email for regestration</p>
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="email">
+                <input type="password" placeholder="password">
+            
+                <button>sign up</button>
+            </form>
+        </div>
+        <div class="switch-box">
+            <h2>welcome back !</h2>
+            <p>To keep connected with us please login with your personal info</p>
+            <button id="btn-chenge">sign in</button>
+            <div class="circleup"></div>
+            <div class="circledown"></div>
+        </div>
+    </main>
+    <script>
+let num=1,_switch=document.getElementsByClassName("switch-box")[0],_chenge=document.getElementById("btn-chenge"),_signin=document.getElementsByClassName("signin")[0],_signup=document.getElementsByClassName("signup")[0],_circleup=document.getElementsByClassName("circleup")[0],_circledown=document.getElementsByClassName("circledown")[0];_chenge.addEventListener("click",function(){_switch.classList.toggle("move-switch"),_signup.classList.toggle("move-signup"),_signin.classList.toggle("move-signin"),_circleup.classList.toggle("move-circleup"),_circledown.classList.toggle("move-circledown"),num%2==1?(_switch.children[0].innerHTML="hello friend !",_switch.children[1].innerHTML="Enter your personal details and start journey with us",_switch.children[2].innerHTML="signup"):(_switch.children[0].innerHTML="welcome back !",_switch.children[1].innerHTML="To keep connected with us please login with your personal info",_switch.children[2].innerHTML="signin"),num++})
+    </script>
+</body>
+</html>
